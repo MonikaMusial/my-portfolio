@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @item.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @item.subtitle %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @item.body %>
+</p>
+<p>
+ <%= image_tag @item.main_image %>
+ </p>
+ <h2>Technologies used</h2>
+ <% @item.technologies.each do |t| %>
+ <%= t.name %>
+ <% end %>
+
+<%= link_to 'Edit', edit_portfolio_path(@item) if logged_in?(:site_admin)%> |
+<%= link_to 'Back', portfolios_path %>
