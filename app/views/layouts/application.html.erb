@@ -14,12 +14,14 @@
   </head>
 
   <body>
-     <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
+    <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+        <div id="background"> </div>
           <%= render "shared/application", location:"top"%>
           <%= yield %>
           <%= render "shared/application_footer"%>
+          <%= render "shared/alerts"%>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@
             title: "Portfolio title #{item}",
             subtitle: "Ruby on Rails",
             body:"Lorem ipsum dolor amet salvia cloud bread photo booth, paleo butcher XOXO small batch. You probably haven't heard of them activated charcoal mumblecore, taiyaki quinoa dreamcatcher shabby chic heirloom meditation thundercats franzen succulents kale chips hot chicken single-origin coffee. Sartorial plaid chartreuse XOXO vape, shoreditch pabst williamsburg aesthetic roof party kombucha. Yuccie waistcoat succulents pok pok gochujang chillwave ramps pork belly lyft cliche biodiesel gentrify narwhal snackwave artisan. Shabby chic salvia knausgaard, gochujang distillery cardigan bushwick semiotics vice. Kogi narwhal cronut irony paleo distillery copper mug microdosing chillwave beard mumblecore four dollar toast.",
-            main_image:"https://via.placeholder.com/350x200",
+            main_image:"https://via.placeholder.com/600x400",
             thumb_image:"https://via.placeholder.com/350x200"
         )
         end

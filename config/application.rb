@@ -30,5 +30,6 @@ module PortfolioMonika
     config.generators.system_tests = nil
     config.autoload_paths << "#{config.root}/lib"
     config.eager_load_paths << "#{config.root}/lib"
+    config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
