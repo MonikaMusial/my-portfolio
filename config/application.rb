@@ -29,7 +29,8 @@ module PortfolioMonika
     # Don't generate system test files.
     config.generators.system_tests = nil
     config.autoload_paths << "#{config.root}/lib"
-    config.eager_load_paths << "#{config.root}/lib"
+    #config.eager_load_paths << "#{config.root}/lib"
     config.eager_load_paths << "#{Rails.root}/lib"
+    config.action_cable.url = "ws://localhost:3000/cable"
   end
 end

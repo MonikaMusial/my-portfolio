@@ -2,21 +2,14 @@
   <h2><%= @blog.title %></h2>
   <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin)%> |
   <%= link_to 'Back', blogs_path %>
+  <p><%= @blog.topic.title %></p>
   <p><%= @blog.body %></p>
 
-  <% unless current_user.is_a? GuestUser %>
-    <%= form_with(model: @comment) do |form| %>
-      <div class="form-group">
-        <%= form.label :content %>
-        <%= form.text_area :content , class: "form-control"%>
-      </div>
-      <div class="actions">
-        <%= form.submit 'Post comment', class:"btn btn-primary"%>
-      </div>
-    <%end%>
-  <%end%>
-
-  <%= render @blog.comments %>
+  <%= render "comments/comment_form" %>
+<br>
+  <div id="comments" data-blog-id="<%= @blog.id %>">
+    <%= render @blog.comments %>
+  </div>
 
 
 </div>
