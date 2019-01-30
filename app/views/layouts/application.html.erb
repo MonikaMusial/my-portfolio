@@ -16,16 +16,23 @@
   </head>
 
   <body>
-    <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-      <div class="cover-container">
+    <%= render "shared/application", location:"top"%>
+      <%
+=begin%>
+ <div class="cover-container">
         <div id="background"> </div>
-          <%= render "shared/application", location:"top"%>
+      <div class="row">
+<%
+=end%>
+    <div class="site-wrapper">
+        <div class="cover-container">
+          <div id="background"> </div>
           <%= yield %>
           <%= render "shared/application_footer"%>
           <%= render "shared/alerts"%>
-        </div>
       </div>
     </div>
   </body>
 </html>
+
+

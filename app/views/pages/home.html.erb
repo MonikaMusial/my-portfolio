@@ -10,13 +10,15 @@
 =end%>
 
 <hr>
-
-<div class="inner cover">
-  <h1 class="cover-heading">Welcome <%= current_user.first_name if ! current_user.is_a?(GuestUser)%></h1>
-  <p class="lead">Whatever I am doing, I am doing it with passion, otherwise there is no point of wasting my time.</p>
-  <p class="lead">
-    <%= link_to "About Me", about_path, class: "btn btn-lg btn-secondary" %>
-  </p>
+<div class="home">
+  <div class="inner cover">
+    <h1 class="cover-heading">Welcome <%= current_user.first_name if ! current_user.is_a?(GuestUser)%></h1>
+    <p class="lead"><b>Whatever I am doing, I am doing it with passion,</b> </p>
+    <p class="lead"><b>otherwise there is no point of wasting my time</b></p>
+    <p class="lead">
+      <%= link_to "About Me", about_path, class: "btn btn-lg btn-secondary" %>
+    </p>
+  </div>
 </div>
 
 

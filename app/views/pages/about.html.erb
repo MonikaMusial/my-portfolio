@@ -1,3 +1,140 @@
-<h1>About me</h1>
-<p>I have 12 years’ experience in IT sector as a part of international project teams (Germany, USA, UK, Nigeria, Israel, India, Portugal) including four	years	of	software	development	experience	(PHP,C#, SQL) and six	years	of	working	with	clients	as	System Analyst,	conducting	business	meetings, gathering clients’	requirements.
-I worked in SCRUM and have SCRUM Master certificate. My strong points are logical thinking, good communication and troubleshooting skills. Since half year I am passionate about Ruby on Rails.</p>
+19 lines (15 sloc)  1.1 KB
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "profile.jpg", width: 300, alt: "profile image", class: 'profile-img' , style: 'max-height:20rem;width:auto;'%>
+          <div class="skills">
+            <% @skills.each do |skill| %>
+              <div class="skill">
+                <h4><%= skill.title %></h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-warning"
+                    role="progressbar"
+                    aria-valuenow="<%= skill.percent_utilized %>"
+                    aria-valuemax="100"
+                    style="width: <%= skill.percent_utilized %>%">
+                  </div>
+                </div>
+              </div>
+            <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-8", style="text-align:left;">
+        <p>I have 12 years’ experience in IT sector as a part of international project teams (Germany, USA, UK, Nigeria, Israel, India, Portugal) including four	years	of	software	development	experience	(PHP,C#, SQL) and six	years	of	working	with	clients	as	System Analyst,	conducting	business	meetings, gathering clients’	requirements.</p>
+        <p>I worked in SCRUM and have SCRUM Master certificate. My strong points are logical thinking, good communication and troubleshooting skills. Since half year I am passionate about Ruby on Rails.</p>
+        <p>
+         <button
+            class="btn btn-dark"
+            type="button"
+            data-toggle="collapse"
+            data-target="#certificates"
+            aria-expanded="false"
+            aria-controler="certificates"
+          >
+            Certificates and Courses
+          </button>
+
+          <div class="collapse" id="certificates">
+            <div class="card card-block">
+              <h6>Netguru College RoR</h6>
+              <p> During the weekend workshop together with 4-people team I have build a Ruby on Rails application from scratch. I was mentored by Tomasz Jaśkiewicz.</p>
+            </div>
+            <div class="card card-block">
+              <h6>RUBYCAMP in Elpassion</h6>
+              <p>I took part in 4-week programming Bootcamp in Ruby and RoR, organised by Elpassion. It included creating Ruby algorithms using best practices: SOLID, DRY, YAGNI, writing specs using UnitTest and RSpec, working with legacy code and external API and creating RoR application.</p>
+            </div>
+            <div class="card card-block">
+              <h6>Professional Scrum Master I, organised by Scrum.org</h6>
+            </div>
+            <div class="card card-block">
+              <h6>Zend Certified Engineer in PHP</h6>
+            </div>
+            <div class="card card-block">
+              <h6>Coursera Ceritifcates</h6>
+              <ul>
+                <li>Statistical Inference Johns Hopkins University</li>
+                <li>R programming at Johns Hopkins University</li>
+                <li>Practical Machine Learning in Python at Johns Hopkins University</li>
+                <li>Machine Learning at Stanford University</li>
+                <li>Getting and Cleaning Data, Johns Hopkins University</li>
+                <li>The Data Scientist’s Toolbox</li>
+                <li>Introduction to Genomic Technologies, Johns Hopkins University</li>
+              <ul>
+            </div>
+          </div>
+        </p>
+        <p>
+          <button
+            class="btn btn-dark"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              Master of Computer Science. Wrocław University of Technology, graduated in 2007
+            </div>
+            <div class="card card-block">
+              Master of Economics, University of Wrocław, graduated in 2008
+            </div>
+            <div class="card card-block">
+              International Baccalaureate Diploma in 2002
+            </div>
+          </div>
+        </p>
+        <p>
+          <button
+            class="btn btn-dark"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              <h6>Senior System Analyst - Self Employed</h6>
+              <p> Participated in project for international investment bank. Analyzed and identified business requirements necessary for MiFID II regulatory reporting, analysed data models coming from various source systems, analyzed source data, produced functional specifications and data flows. Assisted with the implementation of those specifications, cooperation with developers and testers, conducted workshops and meetings with client. Performed data transformation using XSLT,XPath, SQL, Stored Procedures</p>
+            </div>
+            <div class="card card-block">
+              <h6>Fiserv Poland - Senior System Analyst / Software Engineer</h6>
+              <p>Covered several medium to large size projects (in UK and Nigeria) for online banking solutions across digital platforms. Organized and participated in a standard process of BRD and FRD documentation, design, development, QA and UAT testing, and deployment. Cooperated with various clients' departments (in financial sector) to design the final shape of solution. Participated in design of critical strategic enhancement to the system. Documented and supervised fixes for number of production defects. Commenced daily status meetings with teams (agile approach). Developed software in SQl Server and .NET
+              </p>
+            </div>
+            <div class="card card-block">
+              <h6>Internship for Data Scientist at Laboratory of Functional and Structural Genomics at Centre of New Technologies, University of Warsaw</h6>
+              <p>Analyzed and interpreted data from next generation sequencing experiments using R/Python.Conducted research on methods of detecting Copy Number Variations in genome. </p>
+            </div>
+            <div class="card card-block">
+              <h6>Capgemini - Software Engineer</h6>
+              <p>Participated in project in Stuttgart in which I was developing software  in .NET (MVC), SQL Server. </p>
+            </div>
+            <div class="card card-block">
+              <h6>Vantyx Systems, Portugal - Software Engineer </h6>
+              <p>Conducted the phase of gap analysis. Analyzed and gathered requirements. Designed  and customized software designed for managing financial institutions. Developed new functionalities using .NET, SQL Server</p>
+            </div>
+            <div class="card card-block">
+              <h6>Guestcentric,  Portugal - Software Engineer</h6>
+              <p>Designed and developed Middle Layer of the solution using Web Services (SOAP), XML, XSLT transformations. Implemented user interfaces using PHP 5.0 and JavaScript in Frontend layer. Integrated business objects in communication with backend, queries optimization. Implemented business layer classes communicating with MySQL. Created scripts in the shell of the unix based operating system</p>
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

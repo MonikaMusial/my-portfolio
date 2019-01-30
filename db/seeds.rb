@@ -5,6 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create!(
+    email: "test@test.com",
+    password: "asdfasdf",
+    password_confirmation: "asdfasdf",
+    name: "Admin User",
+    roles: "site_admin"
+  )
+
+  User.create!(
+    email: "test2@test.com",
+    password: "asdfasdf",
+    password_confirmation: "asdfasdf",
+    name: "Regular User",
+  )
+
 3.times do |topic|
     Topic.create!(
         title: "Topic #{topic}"
@@ -19,12 +34,41 @@
         )
     end
 
-  5.times do |skill|
     Skill.create!(
-        title: "rails #{skill}",
-        percent_utilized: 15
+        title: "SQL",
+        percent_utilized: 75
     )
-    end
+
+    Skill.create!(
+        title: "Ruby",
+        percent_utilized: 50
+    )
+
+    Skill.create!(
+        title: "RoR",
+        percent_utilized: 50
+    )
+
+    Skill.create!(
+        title: "SCRUM",
+        percent_utilized: 100
+    )
+
+    Skill.create!(
+        title: "Communication",
+        percent_utilized: 100
+    )
+
+    Skill.create!(
+        title: "English",
+        percent_utilized: 100
+    )
+
+    Skill.create!(
+        title: "German",
+        percent_utilized: 50
+    )
+
     8.times do |item|
         Portfolio.create!(
             title: "Portfolio title #{item}",
