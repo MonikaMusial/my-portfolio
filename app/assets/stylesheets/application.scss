@@ -65,6 +65,8 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  margin-top: 8px;
+  margin-right: 10px;
 }
 
 .nav-masthead .nav-link {
@@ -73,6 +75,7 @@ body {
   color: rgba(255,255,255,.5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
+  margin-top: 6px;
 }
 
 .nav-masthead .nav-link:hover,
@@ -172,10 +175,14 @@ body {
   text-align: right;
 }
 
+.card{
+  padding: 10px;
+}
 .login > .card {
-  width: 22rem;
+  width: 18rem;
   margin: 0 auto;
   float: none;
+  padding: 30px;
 }
 
 .app-nav span {
@@ -233,7 +240,7 @@ body {
 }
 
 .skill{
-  margin-top: 5px;
+  margin-top: 8px;
   margin-bottom: 10px;
 }
 
@@ -263,14 +270,22 @@ body {
 
 
 .blog-masthead {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
           box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
 }
 
 .home > .cover{
-  padding-top:  55px;
+  padding-top:  70px;
 }
 .social-links li {
   font-size: 2.5em;
+}
+
+.progress{
+  height: 0.5rem;
+}
+
+.blog-nav{
+  padding-top:  7px;
 }

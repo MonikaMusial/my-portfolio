@@ -3,7 +3,9 @@
         <%= image_tag portfolio_img(item.thumb_image, "thumb"), style: 'max-height:10rem;width:auto;'%>
 
         <p class="card-text">
-        <span><%= link_to item.title, portfolio_show_path(item) %></span>        <%= item.subtitle %></p>
+            <span><%= link_to item.title, portfolio_show_path(item) %></span>
+            <%= link_to 'delete', item, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
+        </p>
         </p>
     </div>
 </div>

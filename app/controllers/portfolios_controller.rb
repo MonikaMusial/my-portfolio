@@ -62,7 +62,7 @@ class PortfoliosController < ApplicationController
     end
 
     def edit
-      3.times{@item.technologies.build}
+
     end
 
     def find

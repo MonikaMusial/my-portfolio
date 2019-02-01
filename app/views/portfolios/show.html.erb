@@ -5,12 +5,14 @@
     </div>
     <div class="col-md-5">
      <h1><%= @item.title %></h1>
-     <em><%= @item.subtitle %></em>
-     <p><%= @item.body %></p>
+     <a href="<%= @item.subtitle %>">My github repo</a>
+     <p> <%= twitter_parser @item.body %></p>
 
     <h2>Technologies used</h2>
     <% @item.technologies.each do |t| %>
-      <%= t.name %>
+      <ul>
+        <li><%= t.name %></li>
+      </ul>
     <% end %>
     <br>
     <%= link_to 'View All Portfolio Items', portfolios_path %>

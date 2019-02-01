@@ -68,30 +68,96 @@ User.create!(
         title: "German",
         percent_utilized: 50
     )
-
-    8.times do |item|
         Portfolio.create!(
-            title: "Portfolio title #{item}",
-            subtitle: "Ruby on Rails",
-            body:"Lorem ipsum dolor amet salvia cloud bread photo booth, paleo butcher XOXO small batch. You probably haven't heard of them activated charcoal mumblecore, taiyaki quinoa dreamcatcher shabby chic heirloom meditation thundercats franzen succulents kale chips hot chicken single-origin coffee. Sartorial plaid chartreuse XOXO vape, shoreditch pabst williamsburg aesthetic roof party kombucha. Yuccie waistcoat succulents pok pok gochujang chillwave ramps pork belly lyft cliche biodiesel gentrify narwhal snackwave artisan. Shabby chic salvia knausgaard, gochujang distillery cardigan bushwick semiotics vice. Kogi narwhal cronut irony paleo distillery copper mug microdosing chillwave beard mumblecore four dollar toast.",
-            main_image:"https://via.placeholder.com/600x400",
-            thumb_image:"https://via.placeholder.com/350x200"
-        )
-        end
-    3.times do |technology|
+            title: "My Own Website",
+            subtitle: "https://github.com/MonikaMusial/my-portfolio",
+            body:"This is a Ruby on Rails 5 application that allows users to create their own portfolios and blogs. Using this application I created my own website that includes my portfolio. Moreover it includes following features: real time chat engine for comments, managing Blogs, managing Portfolios, drag and drop interface and connection to Twitter to grab Tech News",
+            main_image: File.open(Rails.root.join('app/assets/images/blog.jpg'), filename: 'blog.jpg', content_type: 'image/png'),
+            thumb_image: File.open(Rails.root.join('app/assets/images/blog.jpg'), filename: 'blog.jpg', content_type: 'image/png')
+          )
+
         Technology.create!(
-            name: "Technology #{technology}",
+            name: "Ruby on Rails 5",
             portfolio_id: Portfolio.last.id
         )
-        end
 
-    1.times do |item|
-       Portfolio.create!(
-            title: "Portfolio title #{item}",
-            subtitle: "Angular",
-            body:"Lorem ipsum dolor amet salvia cloud bread photo booth, paleo butcher XOXO small batch. You probably haven't heard of them activated charcoal mumblecore, taiyaki quinoa dreamcatcher shabby chic heirloom meditation thundercats franzen succulents kale chips hot chicken single-origin coffee. Sartorial plaid chartreuse XOXO vape, shoreditch pabst williamsburg aesthetic roof party kombucha. Yuccie waistcoat succulents pok pok gochujang chillwave ramps pork belly lyft cliche biodiesel gentrify narwhal snackwave artisan. Shabby chic salvia knausgaard, gochujang distillery cardigan bushwick semiotics vice. Kogi narwhal cronut irony paleo distillery copper mug microdosing chillwave beard mumblecore four dollar toast.",
-            main_image:"https://via.placeholder.com/350x200",
-            thumb_image:"https://via.placeholder.com/350x200"
+        Technology.create!(
+            name: "PostgreSQL",
+            portfolio_id: Portfolio.last.id
         )
-        end
-    puts "Items created"
+
+        Technology.create!(
+            name: "Javascript/CSS/Bootstrap",
+            portfolio_id: Portfolio.last.id
+        )
+
+        Portfolio.create!(
+            title: "App created during Netguru College RoR",
+            subtitle: "https://github.com/MonikaMusial/splitter",
+            body:"This is a Ruby on Rails 5 application for splitting money between group of friends called Splitter. It allows users to create events, add participants and share costs between them.",
+            main_image: File.open(Rails.root.join('app/assets/images/splitter.jpg'), filename: 'splitter.jpg', content_type: 'image/png'),
+            thumb_image: File.open(Rails.root.join('app/assets/images/splitter.jpg'), filename: 'splitter.jpg', content_type: 'image/png')
+            )
+
+        Technology.create!(
+            name: "Ruby on Rails 5",
+            portfolio_id: Portfolio.last.id
+        )
+
+        Technology.create!(
+            name: "PostgreSQL",
+            portfolio_id: Portfolio.last.id
+        )
+
+        Technology.create!(
+            name: "Javascript/CSS/Bootstrap/JQuery",
+            portfolio_id: Portfolio.last.id
+        )
+
+        Portfolio.create!(
+            title: "Ruby Bootcamp",
+            subtitle: "https://github.com/MonikaMusial/bootcamp",
+            body:"I took part in 4-week programming Bootcamp in Ruby and RoR, organised by Elpassion. It included creating Ruby algorithms using best practices: SOLID, DRY, YAGNI, writing specs using UnitTest and RSpec, working with legacy code and external API and creating RoR application.",
+            main_image: File.open(Rails.root.join('app/assets/images/image.jpg'), filename: 'image.jpg', content_type: 'image/png'),
+            thumb_image: File.open(Rails.root.join('app/assets/images/image.jpg'), filename: 'image.jpg', content_type: 'image/png')
+            )
+
+        Technology.create!(
+            name: "Ruby",
+            portfolio_id: Portfolio.last.id
+        )
+
+        Technology.create!(
+            name: "Ruby on Rails 5 / PostgreSQL /Bootstrap",
+            portfolio_id: Portfolio.last.id
+        )
+
+        Technology.create!(
+            name: "Sinatra",
+            portfolio_id: Portfolio.last.id
+        )
+
+        Portfolio.create!(
+            title: "My first RoR app",
+            subtitle: "https://github.com/MonikaMusial/ihaveanidea",
+            body: "It is my first RoR app (https://ihaveanidea.herokuapp.com) that allows group of friends to create new ideas/actions that they want to try in order to encourage others to join them. It allows adding ratings to these ideas.",
+            main_image: File.open(Rails.root.join('app/assets/images/ideas.jpg'), filename: 'ideas.jpg', content_type: 'image/png'),
+            thumb_image: File.open(Rails.root.join('app/assets/images/ideas.jpg'), filename: 'ideas.jpg', content_type: 'image/png')
+            )
+
+        Technology.create!(
+            name: "Ruby on Rails 5",
+            portfolio_id: Portfolio.last.id
+        )
+
+        Technology.create!(
+            name: "PostgreSQL",
+            portfolio_id: Portfolio.last.id
+        )
+
+        Technology.create!(
+            name: "Javascript/CSS/Bootstrap/JQuery",
+            portfolio_id: Portfolio.last.id
+        )
+
+
