@@ -1,4 +1,3 @@
-require 'byebug'
 class PortfoliosController < ApplicationController
     before_action :find, only: [:show, :edit, :update, :destroy]
     layout 'portfolio'

@@ -1,4 +1,3 @@
-require 'byebug'
 module PortfoliosHelper
   def image_generator(height:, width:)
     "http://placehold.it/#{height}x#{width}"

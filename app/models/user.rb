@@ -1,4 +1,3 @@
-require 'byebug'
 class User < ApplicationRecord
   ############################################################################################
   ## PeterGate Roles                                                                        ##
