@@ -1,6 +1,6 @@
 <div class="album text-muted">
   <div class="container">
-     <%= link_to 'New Portfolio Item', new_portfolio_path if logged_in?(:site_admin) %>
+    <%= link_to 'New Portfolio Item', new_portfolio_path if logged_in?(:site_admin) %>
     <div class="row sortable">
       <%= render partial: 'item', collection: @items %>
     </div>

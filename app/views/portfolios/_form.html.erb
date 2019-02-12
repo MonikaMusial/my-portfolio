@@ -56,16 +56,6 @@
         </div>
       </div>
 
-
-        <%
-=begin%>
- <div class="form-group">
-          <% cities_array = Skill.all.map { |skill| [skill.title, skill.id] } %>
-          <%= form.select(:cities_array, cities_array) %>
-        </div>
-<%
-=end%>
-
       <div class="actions">
         <%= form.submit 'Save',class:"btn btn-primary btn-block" %>
       </div>
