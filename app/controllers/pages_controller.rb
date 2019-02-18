@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-
+  layout 'home', only: [:home, :contact]
   def home
     @posts = Blog.all
     @skills = Skill.all
